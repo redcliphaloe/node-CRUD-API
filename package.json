@@ -12,7 +12,7 @@
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "start:dev": "nodemon",
-    "start:prod": "webpack --mode=production --node-env=production && node ./dist/main.js"
+    "start:prod": "tsc && ts-node-esm --experimental-specifier-resolution=node ./dist/index.js"
   },
   "repository": {
     "type": "git",
