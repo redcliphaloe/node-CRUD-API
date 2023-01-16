@@ -1,15 +1,31 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Welcome to CRUD-API project!
 
-This project has been created using **webpack-cli**, you can now run
-
+To work with the project you should to clone the repository
 ```
-npm run build
+git clone git@github.com:redcliphaloe/node-CRUD-API.git
 ```
-
-or
-
+switch to the dev branch
 ```
-yarn build
+git checkout dev
 ```
+install the dependencies
+```
+npm install
+```
+rename ```.env.example``` file to ```.env```.
 
-to bundle your application
+
+You can use the project in developer mode
+```
+npm run start:dev
+```
+or in production mode
+```
+npm run start:prod
+```
+After launching the application, open the page in the browser
+```
+http://localhost:{PORT value from .env}/api/users
+```
+or try the wrong endpoint.
+Other methods are not implemented.
