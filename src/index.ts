@@ -27,12 +27,13 @@ const listener = (req: http.IncomingMessage, res: http.ServerResponse) => {
       if (url === BASE_URL || url === BASE_URL + '/') {
         res.statusCode = 200;
         res.end(JSON.stringify(users));
+        return;
       }
       break;
     default:
       res.statusCode = 500;
       res.end('Invalid method or error');
-      break;
+      return;
   }
   res.statusCode = 404;
   res.end('Method not implemented');
